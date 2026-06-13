@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-06-13T00:14:49.412898" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests Api" source="C:\projet-tests\tests_api">
+<suite id="s1-s1" name="00 Requête GET HTML Google" source="C:\projet-tests\tests_api\00_Requête_GET_HTML_Google.robot">
+<test id="s1-s1-t1" name="Test Requête Get Simple" line="5">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:50.344872" level="INFO">GET Request : url=https://www.google.com/ 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:14:50.345113" level="INFO">GET Response : url=https://www.google.com/ 
+ status=200, reason=OK 
+ headers={'Content-Type': 'text/html; charset=ISO-8859-1', 'Date': 'Fri, 12 Jun 2026 22:14:50 GMT', 'Expires': '-1', 'Cache-Control': 'private, max-age=0', 'Content-Security-Policy-Report-Only': "object-src 'none';base-uri 'self';script-src 'nonce-fEel5qtUdyfZUigWwihIXg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp", 'Accept-CH': 'Sec-CH-Prefers-Color-Scheme', 'P3P': 'CP="This is not a P3P policy! See g.co/p3phelp for more info."', 'Content-Encoding': 'gzip', 'Server': 'gws', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'SOCS=CAAaBgiAmK3RBg; expires=Mon, 12-Jul-2027 22:14:50 GMT; path=/; domain=.google.com; Secure; SameSite=lax, AEC=AaJma5s2m5muCUMmT0EA_K7CQgK4VYThT4osUMSXPCpvGzaVfMhUFaA8dg; expires=Wed, 09-Dec-2026 22:14:50 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, __Secure-ENID=34.SE=Yf7i7qf5DJ1DPBhjN_HQs8e_M0GSNIKqiDO0woDt7EM2cvFAWmbjjiVSo38tde9lP7X6WjBrsp99cXnrJXbXRpgy3aucUSNNMtLFilWfnm_F6sp3rY3L2kKqv6Lxqzk0yBHrgBRd215JqcmnFhrPFqwU3FqrZAXIM4jFN23cq7gw5kEeuuCSeJFCEVKjrhC6SWaz2TTOFl6ZWfyn5NcNt1Fx5om0qplaKAv938Ex1k7n6xh6co0qOTVJG65P; expires=Tue, 13-Jul-2027 14:33:08 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, __Secure-BUCKET=CM4G; expires=Wed, 09-Dec-2026 22:14:50 GMT; path=/; domain=.google.com; Secure; HttpOnly', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} 
+ body=&lt;!doctype html&gt;&lt;html itemscope="" itemtype="http://schema.org/WebPage" lang="fr"&gt;&lt;head&gt;&lt;meta content="text/html; charset=UTF-8" http-equiv="Content-Type"&gt;&lt;meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce="fEel5qtUdyfZUigWwihIXg"&gt;(function(){var _g={kEI:'2oQsarW-Dv2nkdUPwfroKQ',kEXPI:'0,824381,479822,2935842,14112,34679,30022,94324,123645,142932,5520324,12476,36811568,25228681,152386,65166,138348,145445,7714,33385,927,3,25300,3590,22001,46339,20676,11885,16179,2646,4543,19703,15888,4,1514,3355,3636,2374,2,5999,6,1416,12885,2,3105,5089,19,3008,18,777,32368,4255,3714,4,1619,845,2047,1,1,7,14,10252,4,17977,5,964,2,147,389,4,2647,5,5568,298,9253,16493,2,6335,1649,4,12676,3,4980,10,814,2,3768,4,1634,544,4,4000,187,2105,5,461,3925,4,2364,2363,5,6458,4,2421,5,1944,5,4916,4,448,2299,4,2110,4,438,4312,4,1456,4,1281,4,1940,4,1447,4,198,4,1341,1,1357,2701,4,1506,1396,1801,508,1776,1518,10,2,1024,10,3355,3822,3449,4,480,4498,21012873,4,2960,3,10051,3,11875,6097,3,5578,4,6498079,8533,6,5602,2,2628,68,1409,3,103,2821,939,166,12,949,425,92040,1889798,1626113,1009010,12333745,1130759,3,2592126,5,3687,616,4,453,2,1720,1844,5,4928,7,7,7,865,126,9012,160,1012,15,1595,5,142,4,3909,10,1237,582,4,523,1948,1973,5,2,10,957,2042,1536,60,1673,619,4388,5,18,1097,4,584,923,4,1628,3575,3566,4,99,4,3523,4,2022,459,5,764,4,2262,167,896,1598,2756,1201,5,2125,388,4,235,1,6,997,4,1348,734,637,8,880,1,282,204,4,59,4,2839,5,47,4,1236,794,5,116,1135,4,374,2407,825,1,406,4,576,632,1236,31,2398,5,25,618,3,72,5223,78,4083,772,847,329,171,4,127,4,1558,1159,5999,1,2007,5,313,139,532,4,1080,4,238,4,309,3,2,2,2,914,4,2660,4,167,5,1749,568,343,838,9,2881,7,578,451,3,2,2,2,1061,131,2740,292,4,2,6,12,1858,1111,1,2368,496,798,5450,1331,4438,380,21,7,243,71,15,222,4,1098,585,13,2,1740,4,884,4,184,14,1084,920,223,4,1907,3,320,338,4,58,133,1229,3,2,2,2,137,4078,4,1787,4,936,7,22,5,1324,5,1,3,124,1657,3324,1,5819,247,5,1651,3347,5,7,239,620,4107,308,4,2194,430,1035,116,6,2,1203,4,81,4,5,28,624,3,2,2,2,214,2413,22,278,57,5,295,400,5,1070,4,301,4,97,8,4,261,115,1513,39,385,52,4,193,27,21,611,1601,266,386,830,3,2,2,2,248,4,275,48,4,354,5,2,1121,27,828,768,418,8,4,537,4,1019,4,30,1,158,1,46,32,1917,132,1007,221,5,99,582,224,98,3,2,2,2,228,48,5,7,1476,567,4,722,2,581,5,180,6,127,161,4,169,691,181,700,117,1,4,275,26,728,1223,4,334,4,359,1,2,144,1937,48,255,35,72,4,83,283,650,299,202,43,3,616,274,671,628,2,12,187,97,3,2,2,2,2273,111,489,1,2,146,3,2,2,2,184,45,4,145,1,96,4,300,662,45,474,23,3,2,2,2,18,2080,1758,890,217,511,169,619,1811,651,285,2,40,131,6,1220,4,309,3,2,2,2,25,169,2201,6698,1044,735933,7',kBL:'Mnyv',kOPI:89978449};(function(){var a;((a=window.google)==null?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn='webhp';google.kHL='fr';google.usb=false;})();(function(){
+var g=this||self;function k(){return window.google&amp;&amp;window.google.kOPI||null};var l,m=!1,n=[];function p(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||l}function q(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b}function r(a){/^http:/i.test(a)&amp;&amp;window.location.protocol==="https:"&amp;&amp;(google.ml&amp;&amp;google.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a}
+function t(a,b,c,d,h){var e="";b.search("&amp;ei=")===-1&amp;&amp;(e="&amp;ei="+p(d),b.search("&amp;lei=")===-1&amp;&amp;(d=q(d))&amp;&amp;(e+="&amp;lei="+d));var f=b.search("&amp;cshid=")===-1&amp;&amp;a!=="slh";d="&amp;zx="+Date.now().toString();g._cshid&amp;&amp;f&amp;&amp;(d+="&amp;cshid="+g._cshid);(c=c())&amp;&amp;(d+="&amp;opi="+c);(c=(new URLSearchParams(window.location.search)).get("gemcid"))&amp;&amp;(d+="&amp;gemcid="+c);(c=(new URLSearchParams(window.location.search)).get("gemrid"))&amp;&amp;(d+="&amp;gemrid="+c);return"/"+(h||"gen_204")+"?atyp=i&amp;ct="+String(a)+"&amp;cad="+(b+e+d)};var u=google.usb;l=google.kEI;m=u||!1;google.getEI=p;google.getLEI=q;google.ml=function(){return null};google.log=function(a,b,c,d,h,e){e=e===void 0?k:e;c||(c=t(a,b,e,d,h));if(c=r(c))if(m)typeof window.navigator.sendBeacon==="function"&amp;&amp;window.navigator.sendBeacon(c,"");else{a=new Image;var f=n.length;n[f]=a;a.onerror=a.onload=a.onabort=function(){delete n[f]};a.src=c}};google.logUrl=function(a,b){b=b===void 0?k:b;return t("",a,b)};}).call(this);(function(){google.y={};google.sy={};function e(a,b,d){if(a)var c=a.id;else{do c=Math.random();while(d[c])}d[c]=[a,b]}var f;(f=google).x||(f.x=function(a,b){e(a,b,google.y)});var g;(g=google).sx||(g.sx=function(a,b){e(a,b,google.sy)});google.bx=!1;var h;(h=google).lx||(h.lx=function(){});var k=[],l;(l=google).fce||(l.fce=function(a,b,d,c){k.push([a,b,d,c])});google.qce=k;google.adl=[];}).call(this);google.f={};(function(){
+document.documentElement.addEventListener("submit",function(b){var a;if(a=b.target){var c=a.getAttribute("data-submitfalse");a=c==="1"||c==="q"&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener("click",function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(a.tagName==="A"){a=a.getAttribute("data-nohref")==="1";break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;script nonce="fEel5qtUdyfZUigWwihIXg"&gt;;this.gbar_={CONFIG:[[[0,"www.gstatic.com","og.qtm.en_US.g2z0U3YN7yo.es5.O","fr","fr","538",0,[4,2,"","","","928265099","0"],null,"2oQsauOfD9qD3boPoa_fmQc",null,0,"og.qtm.h1cZRu6LTuo.L.X.O","AA2YrTsW_aUe8UBPtADh6KzADm_sEIZi6g","AA2YrTs81XJgTBPzPSN5h8nNqpJIPQyqjg","",2,1,200,"FRA",null,null,"1","538",1,null,null,89978449,null,0,0,0,0],null,[1,0.1000000014901161,2,1],null,[0,0,0,null,"","","","",0,0,null,""],[0,0,"",1,0,0,0,0,0,0,null,0,0,null,0,0,null,null,0,0,0,"","","","","","",null,0,0,0,0,0,null,null,null,"rgba(32,33,36,1)","rgba(255,255,255,1)",0,0,1,null,null,null,0,null,null,null,0],null,null,["1","gci_91f30755d6a6b787dcc2a4062e6e9824.js","googleapis.client:gapi.iframes","","fr"],null,null,null,null,null,[0.009999999776482582,"fr","538",[null,"","0",null,1,5184000,null,null,"",null,null,null,null,null,0,null,0,null,1,0,0,0,null,null,0,0,null,0,0,0,0,0],null,null,null,0],[1,null,null,27043,538,"FRA","fr","928265099.0",8,null,0,0,null,null,null,null,"3701384,102772546,116119825,116249040,116249043",null,null,null,"2oQsauOfD9qD3boPoa_fmQc",0,0,0,null,2,5,"we",106,0,0,null,null,1,89978449,0,0],[[null,null,null,"https://www.gstatic.com/og/_/js/k=og.qtm.en_US.g2z0U3YN7yo.es5.O/rt=j/m=qabr,q_dnp,qapid,qald,qads/exm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/rs=AA2YrTsW_aUe8UBPtADh6KzADm_sEIZi6g"],[null,null,null,"https://www.gstatic.com/og/_/ss/k=og.qtm.h1cZRu6LTuo.L.X.O/m=d_b_gm3,d_wi_gm3,d_lo_gm3/excm=qaaw,qadd,qaid,qein,qhaw,qhba,qhbr,qhch,qhga,qhid,qhin/d=1/ed=1/ct=zgms/rs=AA2YrTs81XJgTBPzPSN5h8nNqpJIPQyqjg"]]]],};this.gbar_=this.gbar_||{};(function(_){var window=this;
+try{
+_._F_toggles_initialize=function(a){(typeof globalThis!=="undefined"?globalThis:typeof self!=="undefined"?self:this)._F_toggles_gbar_=a||[]};(0,_._F_toggles_initialize)([]);
+/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var ia,oa,qa,ua,xa,ya,Pa,Qa,hb,kb,mb,rb,nb,ub,zb,Lb,Mb,Nb,Ob,Pb,Yb,Zb,$b,ac;_.aa=function(a,b){if(Error.captureStackTrace)Error.captureStackTrace(this,_.aa);else{var c=Error().stack;c&amp;&amp;(this.stack=c)}a&amp;&amp;(this.message=String(a));b!==void 0&amp;&amp;(this.cause=b)};_.ba=function(a){a.eq=!0;return a};
+_.ha=function(a){var b=a;if(ca(b)){if(!/^\s*(?:-?[1-9]\d*|0)?\s*$/.test(b))throw Error(String(b));}else if(da(b)&amp;&amp;!Number.isSafeInteger(b))throw Error(String(b));return ea?BigInt(a):a=fa(a)?a?"1":"0":ca(a)?a.trim()||"0":String(a)};ia=function(a,b){if(a.length&gt;b.length)return!1;if(a.length&lt;b.length||a===b)return!0;for(var c=0;c&lt;a.length;c++){var d=a[c],e=b[c];if(d&gt;e)return!1;if(d&lt;e)return!0}};_.ja=function(a){_.t.setTimeout(function(){throw a;},0)};
+_.la=function(){return _.ka().toLowerCase().indexOf("webkit")!=-1};_.ka=function(){var a=_.t.navigator;return a&amp;&amp;(a=a.userAgent)?a:""};oa=function(a){if(!ma||!na)return!1;for(var b=0;b&lt;na.brands.length;b++){var c=na.brands[b].brand;if(c&amp;&amp;c.indexOf(a)!=-1)return!0}return!1};_.pa=function(a){return _.ka().indexOf(a)!=-1};qa=function(){return ma?!!na&amp;&amp;na.brands.length&gt;0:!1};_.ra=function(){return qa()?!1:_.pa("Opera")};_.sa=function(){return qa()?!1:_.pa("Trident")||_.pa("MSIE")};
+_.ta=function(){return _.pa("Firefox")||_.pa("FxiOS")};_.wa=function(){return _.pa("Safari")&amp;&amp;!(ua()||(qa()?0:_.pa("Coast"))||_.ra()||(qa()?0:_.pa("Edge"))||(qa()?oa("Microsoft Edge"):_.pa("Edg/"))||(qa()?oa("Opera"):_.pa("OPR"))||_.ta()||_.pa("Silk")||_.pa("Android"))};ua=function(){return qa()?oa("Chromium"):(_.pa("Chrome")||_.pa("CriOS"))&amp;&amp;!(qa()?0:_.pa("Edge"))||_.pa("Silk")};xa=function(){return ma?!!na&amp;&amp;!!na.platform:!1};ya=function(){return _.pa("iPhone")&amp;&amp;!_.pa("iPod")&amp;&amp;!_.pa("iPad")};
+_.za=function(){return ya()||_.pa("iPad")||_.pa("iPod")};_.Aa=function(){return xa()?na.platform==="macOS":_.pa("Macintosh")};_.Ca=function(a,b){return(0,_.Ba)(a,b)&gt;=0};_.Da=function(a,b,c){return typeof Symbol==="function"&amp;&amp;typeof Symbol()==="symbol"?(c===void 0?0:c)&amp;&amp;Symbol.for&amp;&amp;a?Symbol.for(a):a!=null?Symbol(a):Symbol():b};_.Ha=function(a,b){_.Ea||_.w in a||Fa(a,Ga);a[_.w]|=b};_.Ia=function(a,b){_.Ea||_.w in a||Fa(a,Ga);a[_.w]=b};_.Ma=function(a){return a[Ja]===La};
+_.Oa=function(a,b){return b===void 0?a.j!==Na&amp;&amp;!!(2&amp;(a.J[_.w]|0)):!!(2&amp;b)&amp;&amp;a.j!==Na};Pa=function(a){return a};Qa=function(a,b){a.__closure__error__context__984382||(a.__closure__error__context__984382={});a.__closure__error__context__984382.severity=b};_.Ra=function(a){a=Error(a);Qa(a,"warning");return a};_.Ta=function(a,b){if(a!=null){var c;var d=(c=Sa)!=null?c:Sa={};c=d[a]||0;c&gt;=b||(d[a]=c+1,a=Error(),Qa(a,"incident"),_.ja(a))}};
+_.Va=function(a){if(typeof a!=="boolean")throw Error("y`"+_.Ua(a)+"`"+a);return a};_.Wa=function(a){if(a==null||typeof a==="boolean")return a;if(typeof a==="number")return!!a};_.Ya=function(a){if(!(0,_.Xa)(a))throw _.Ra("enum");return a|0};_.Za=function(a){if(typeof a!=... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2026-06-13T00:14:50.345437" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<var>${reponse}</var>
+<arg>https://www.google.com</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-06-13T00:14:49.673917" elapsed="0.671552"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:49.672813" elapsed="0.673093"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:49.463581" elapsed="0.883282"/>
+</suite>
+<suite id="s1-s2" name="01 Request GET TestAcademy" source="C:\projet-tests\tests_api\01_Request GET_TestAcademy.robot">
+<test id="s1-s2-t1" name="Test 001 Requete GET" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:50.486124" level="INFO">&amp;{Params} = { page=1 | per_page=6 }</msg>
+<var>&amp;{Params}</var>
+<arg>page=1</arg>
+<arg>per_page=6</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:50.485462" elapsed="0.000781"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:50.488246" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:50.486691" elapsed="0.001603"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:51.814118" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/users?page=1&amp;per_page=6 
+ path_url=/api/users?page=1&amp;per_page=6 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:14:51.814413" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/users?page=1&amp;per_page=6 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:51 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': 'b6128f14-4775-4ee3', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0ac35fa28a978fb-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@api.testacademy.fr","first_name":"George","last_name":"Bluth","avatar":"https://api.testacademy.fr/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@api.testacademy.fr","first_name":"Janet","last_name":"Weaver","avatar":"https://api.testacademy.fr/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@api.testacademy.fr","first_name":"Emma","last_name":"Wong","avatar":"https://api.testacademy.fr/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@api.testacademy.fr","first_name":"Eve","last_name":"Holt","avatar":"https://api.testacademy.fr/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@api.testacademy.fr","first_name":"Charles","last_name":"Morris","avatar":"https://api.testacademy.fr/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@api.testacademy.fr","first_name":"Tracey","last_name":"Ramos","avatar":"https://api.testacademy.fr/img/faces/6-image.jpg"}],"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-06-13T00:14:51.814764" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>params=${Params}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-06-13T00:14:50.488609" elapsed="1.326225"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:51.817350" level="INFO">${ReponseJson} = {'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacadem...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.815503" elapsed="0.001932"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-13T00:14:51.818666" level="INFO">{'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacademy.fr/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@api.testacademy.fr', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://api.testacademy.fr/img/faces/2-image.jpg'}, {'id': 3, 'email': 'emma.wong@api.testacademy.fr', 'first_name': 'Emma', 'last_name': 'Wong', 'avatar': 'https://api.testacademy.fr/img/faces/3-image.jpg'}, {'id': 4, 'email': 'eve.holt@api.testacademy.fr', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://api.testacademy.fr/img/faces/4-image.jpg'}, {'id': 5, 'email': 'charles.morris@api.testacademy.fr', 'first_name': 'Charles', 'last_name': 'Morris', 'avatar': 'https://api.testacademy.fr/img/faces/5-image.jpg'}, {'id': 6, 'email': 'tracey.ramos@api.testacademy.fr', 'first_name': 'Tracey', 'last_name': 'Ramos', 'avatar': 'https://api.testacademy.fr/img/faces/6-image.jpg'}], 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.817996" elapsed="0.000802"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2026-06-13T00:14:51.954480" level="INFO">${ListeUtilisateurs} = [{'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacademy.fr/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@api...</msg>
+<var>${ListeUtilisateurs}</var>
+<arg>${ReponseJson}</arg>
+<arg>data[:]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2026-06-13T00:14:51.819303" elapsed="0.135299"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2026-06-13T00:14:51.956313" level="INFO">${PremierUtilisateur} = {'id': 1, 'email': 'george.bluth@api.testacademy.fr', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://api.testacademy.fr/img/faces/1-image.jpg'}</msg>
+<var>${PremierUtilisateur}</var>
+<arg>${ListeUtilisateurs}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.955614" elapsed="0.000766"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:51.958328" level="INFO">${PrenomAttendu} = George</msg>
+<var>${PrenomAttendu}</var>
+<arg>${PremierUtilisateur['first_name']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.956935" elapsed="0.001443"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${PremierUtilisateur['first_name']}</arg>
+<arg>${PrenomAttendu}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.958747" elapsed="0.000944"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:50.484905" elapsed="1.475796"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:50.347854" elapsed="1.613645"/>
+</suite>
+<suite id="s1-s3" name="02 Requete POST TestAcademy" source="C:\projet-tests\tests_api\02_Requete_POST_TestAcademy.robot">
+<test id="s1-s3-t1" name="Test Requete POST" line="13">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:51.969860" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.969162" elapsed="0.000743"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:51.970855" level="INFO">&amp;{Corps_Requete} = { first_name=Anass | last_name=Rami | email=anass.rami@api.testacademy.fr }</msg>
+<var>&amp;{Corps_Requete}</var>
+<arg>first_name=${FirstName_Attendu}</arg>
+<arg>last_name=${LastName_Attendu}</arg>
+<arg>email=${Email_Attendu}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.970290" elapsed="0.000594"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:52.846668" level="INFO">POST Request : url=https://mock-api-h0g7.onrender.com/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '86', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Anass", "last_name": "Rami", "email": "anass.rami@api.testacademy.fr"}' 
+ </msg>
+<msg time="2026-06-13T00:14:52.846929" level="INFO">POST Response : url=https://mock-api-h0g7.onrender.com/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': '9282c0bb-5336-4e13', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'CF-RAY': 'a0ac3602fdc93d17-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Anass","last_name":"Rami","email":"anass.rami@api.testacademy.fr","avatar":"https://api.testacademy.fr/img/faces/13-image.jpg","id":"13","createdAt":"2026-06-12T22:14:52.744316"} 
+ </msg>
+<msg time="2026-06-13T00:14:52.847262" level="INFO">${Reponse} = &lt;Response [201]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>json=${Corps_Requete}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2026-06-13T00:14:51.971138" elapsed="0.876195"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-13T00:14:52.849786" level="INFO">{'first_name': 'Anass', 'last_name': 'Rami', 'email': 'anass.rami@api.testacademy.fr', 'avatar': 'https://api.testacademy.fr/img/faces/13-image.jpg', 'id': '13', 'createdAt': '2026-06-12T22:14:52.744316'}</msg>
+<arg>${Reponse.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.848036" elapsed="0.002197"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Reponse.json()}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.850823" elapsed="0.001287"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${Reponse.json()}</arg>
+<arg>createdAt</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.852772" elapsed="0.001289"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:52.855934" level="INFO">${first_name} = Anass</msg>
+<var>${first_name}</var>
+<arg>${Reponse.json()}</arg>
+<arg>first_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.854674" elapsed="0.001332"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${FirstName_Attendu}</arg>
+<arg>${first_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.856760" elapsed="0.001066"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:52.859799" level="INFO">${last_name} = Rami</msg>
+<var>${last_name}</var>
+<arg>${Reponse.json()}</arg>
+<arg>last_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.858441" elapsed="0.001431"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${LastName_Attendu}</arg>
+<arg>${last_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.860677" elapsed="0.000783"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:52.863540" level="INFO">${email} = anass.rami@api.testacademy.fr</msg>
+<var>${email}</var>
+<arg>${Reponse.json()}</arg>
+<arg>email</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.861923" elapsed="0.001721"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Email_Attendu}</arg>
+<arg>${email}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.864285" elapsed="0.000908"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:51.968265" elapsed="0.897435"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:51.962525" elapsed="0.904288"/>
+</suite>
+<suite id="s1-s4" name="03 Requete DELETE TestAcademy (3)" source="C:\projet-tests\tests_api\03_Requete_DELETE_TestAcademy (3).robot">
+<test id="s1-s4-t1" name="Test Requete DELETE" line="10">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:52.876916" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.876032" elapsed="0.000955"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:52.878596" level="INFO">&amp;{body} = { first_name=Lokmane | last_name=Test | email=lokmane@test.fr }</msg>
+<var>&amp;{body}</var>
+<arg>first_name=Lokmane</arg>
+<arg>last_name=Test</arg>
+<arg>email=lokmane@test.fr</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.877791" elapsed="0.000874"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:53.758914" level="INFO">POST Request : url=https://mock-api-h0g7.onrender.com/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '74', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Lokmane", "last_name": "Test", "email": "lokmane@test.fr"}' 
+ </msg>
+<msg time="2026-06-13T00:14:53.759049" level="INFO">POST Response : url=https://mock-api-h0g7.onrender.com/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': 'ae7a39b2-995a-4333', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'CF-RAY': 'a0ac36083ce152be-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Lokmane","last_name":"Test","email":"lokmane@test.fr","avatar":"https://api.testacademy.fr/img/faces/14-image.jpg","id":"14","createdAt":"2026-06-12T22:14:53.575394"} 
+ </msg>
+<msg time="2026-06-13T00:14:53.759249" level="INFO">${u} = &lt;Response [201]&gt;</msg>
+<var>${u}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2026-06-13T00:14:52.879198" elapsed="0.880091"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:53.762142" level="INFO">${id} = 14</msg>
+<var>${id}</var>
+<arg>${u.json()['id']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:53.759911" elapsed="0.002326"/>
+</kw>
+<kw name="DELETE" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:54.693274" level="INFO">DELETE Request : url=https://mock-api-h0g7.onrender.com/api/users/14 
+ path_url=/api/users/14 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:14:54.693448" level="INFO">DELETE Response : url=https://mock-api-h0g7.onrender.com/api/users/14 
+ status=204, reason=No Content 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:54 GMT', 'Content-Type': 'application/json', 'Connection': 'keep-alive', 'Content-Encoding': 'br', 'rndr-id': '21886660-e662-4a5a', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': 'a0ac360e9f76d12e-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:14:54.693699" level="INFO">${reponse} = &lt;Response [204]&gt;</msg>
+<var>${reponse}</var>
+<arg>${Base_URL}api/users/${id}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=204</arg>
+<doc>Sends a DELETE request.</doc>
+<status status="PASS" start="2026-06-13T00:14:53.763143" elapsed="0.930636"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:52.875081" elapsed="1.819461"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:52.868235" elapsed="1.827863"/>
+</suite>
+<suite id="s1-s5" name="04 Requete PUT TestAcademy (1)" source="C:\projet-tests\tests_api\04_Requete_PUT_TestAcademy (1).robot">
+<test id="s1-s5-t1" name="Test Requete PUT" line="13">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:54.706579" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:54.705664" elapsed="0.000989"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:54.708114" level="INFO">&amp;{body} = { first_name=Lokmane | last_name=Test | email=lokmane@test.fr }</msg>
+<var>&amp;{body}</var>
+<arg>first_name=Lokmane</arg>
+<arg>last_name=Test</arg>
+<arg>email=lokmane@test.fr</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:54.707281" elapsed="0.000898"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:56.113852" level="INFO">POST Request : url=https://mock-api-h0g7.onrender.com/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '74', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Lokmane", "last_name": "Test", "email": "lokmane@test.fr"}' 
+ </msg>
+<msg time="2026-06-13T00:14:56.114033" level="INFO">POST Response : url=https://mock-api-h0g7.onrender.com/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:55 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'rndr-id': '1f4c674a-e8aa-4be6', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': 'a0ac36145a5e6f8e-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Lokmane","last_name":"Test","email":"lokmane@test.fr","avatar":"https://api.testacademy.fr/img/faces/15-image.jpg","id":"15","createdAt":"2026-06-12T22:14:55.825053"} 
+ </msg>
+<msg time="2026-06-13T00:14:56.114306" level="INFO">${u} = &lt;Response [201]&gt;</msg>
+<var>${u}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2026-06-13T00:14:54.708797" elapsed="1.405566"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:56.116608" level="INFO">${id} = 15</msg>
+<var>${id}</var>
+<arg>${u.json()['id']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.115016" elapsed="0.001658"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:56.118490" level="INFO">&amp;{corps_put} = { first_name=Janet | last_name=Zion-Weaver | email=janet.zion@api.testacademy.fr }</msg>
+<var>&amp;{corps_put}</var>
+<arg>first_name=${FirstName_Attendu}</arg>
+<arg>last_name=${LastName_Attendu}</arg>
+<arg>email=${Email_Attendu}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.117324" elapsed="0.001249"/>
+</kw>
+<kw name="PUT" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:56.986734" level="INFO">PUT Request : url=https://mock-api-h0g7.onrender.com/api/users/15 
+ path_url=/api/users/15 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '93', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Janet", "last_name": "Zion-Weaver", "email": "janet.zion@api.testacademy.fr"}' 
+ </msg>
+<msg time="2026-06-13T00:14:56.986955" level="INFO">PUT Response : url=https://mock-api-h0g7.onrender.com/api/users/15 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:56 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': '71666c74-fb81-49d7', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0ac361cff016ebb-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Janet","last_name":"Zion-Weaver","email":"janet.zion@api.testacademy.fr","avatar":"https://api.testacademy.fr/img/faces/15-image.jpg","updatedAt":"2026-06-12T22:14:56.886027"} 
+ </msg>
+<msg time="2026-06-13T00:14:56.987295" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<var>${reponse}</var>
+<arg>${Base_URL}api/users/${id}</arg>
+<arg>json=${corps_put}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a PUT request.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.119267" elapsed="0.868099"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-13T00:14:56.990146" level="INFO">{'first_name': 'Janet', 'last_name': 'Zion-Weaver', 'email': 'janet.zion@api.testacademy.fr', 'avatar': 'https://api.testacademy.fr/img/faces/15-image.jpg', 'updatedAt': '2026-06-12T22:14:56.886027'}</msg>
+<arg>${reponse.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.988312" elapsed="0.001975"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${reponse.json()}</arg>
+<arg>updatedAt</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.990939" elapsed="0.002099"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:56.995292" level="INFO">${first_name} = Janet</msg>
+<var>${first_name}</var>
+<arg>${reponse.json()}</arg>
+<arg>first_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.993776" elapsed="0.001606"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${FirstName_Attendu}</arg>
+<arg>${first_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.996674" elapsed="0.000842"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:56.999292" level="INFO">${last_name} = Zion-Weaver</msg>
+<var>${last_name}</var>
+<arg>${reponse.json()}</arg>
+<arg>last_name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.998088" elapsed="0.001277"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${LastName_Attendu}</arg>
+<arg>${last_name}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-06-13T00:14:56.999860" elapsed="0.000737"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:57.002262" level="INFO">${email} = janet.zion@api.testacademy.fr</msg>
+<var>${email}</var>
+<arg>${reponse.json()}</arg>
+<arg>email</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.001060" elapsed="0.001273"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Email_Attendu}</arg>
+<arg>${email}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.002885" elapsed="0.000733"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:54.704675" elapsed="2.299470"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:54.697490" elapsed="2.307684"/>
+</suite>
+<suite id="s1-s6" name="05 Requete GET User ById TestAcademy" source="C:\projet-tests\tests_api\05_Requete_GET_User_ById_TestAcademy.robot">
+<test id="s1-s6-t1" name="Test Requete GET User By Id" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:57.037769" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.036400" elapsed="0.001475"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:57.039459" level="INFO">&amp;{body} = { first_name=Lokmane | last_name=Test | email=lokmane@test.fr }</msg>
+<var>&amp;{body}</var>
+<arg>first_name=Lokmane</arg>
+<arg>last_name=Test</arg>
+<arg>email=lokmane@test.fr</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.038583" elapsed="0.000942"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:57.892879" level="INFO">POST Request : url=https://mock-api-h0g7.onrender.com/api/users 
+ path_url=/api/users 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy', 'Content-Length': '74', 'Content-Type': 'application/json'} 
+ body=b'{"first_name": "Lokmane", "last_name": "Test", "email": "lokmane@test.fr"}' 
+ </msg>
+<msg time="2026-06-13T00:14:57.892973" level="INFO">POST Response : url=https://mock-api-h0g7.onrender.com/api/users 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:57 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': '7742945f-b583-47e3', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'CF-RAY': 'a0ac36221d4f6f5d-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"first_name":"Lokmane","last_name":"Test","email":"lokmane@test.fr","avatar":"https://api.testacademy.fr/img/faces/16-image.jpg","id":"16","createdAt":"2026-06-12T22:14:57.700852"} 
+ </msg>
+<msg time="2026-06-13T00:14:57.894334" level="INFO">${u} = &lt;Response [201]&gt;</msg>
+<var>${u}</var>
+<arg>${Base_URL}api/users</arg>
+<arg>json=${body}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.040052" elapsed="0.854322"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:57.896006" level="INFO">${id} = 16</msg>
+<var>${id}</var>
+<arg>${u.json()['id']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.894790" elapsed="0.001266"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:58.673814" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/users/16 
+ path_url=/api/users/16 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:14:58.674000" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/users/16 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:58 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': '5be1981c-fb4f-4ab8', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0ac36272a8699b6-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"data":{"id":16,"email":"lokmane@test.fr","first_name":"Lokmane","last_name":"Test","avatar":"https://api.testacademy.fr/img/faces/16-image.jpg"},"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-06-13T00:14:58.674610" level="INFO">${reponse} = &lt;Response [200]&gt;</msg>
+<var>${reponse}</var>
+<arg>${Base_URL}api/users/${id}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-06-13T00:14:57.896697" elapsed="0.778167"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:58.676640" level="INFO">${reponseJson} = {'data': {'id': 16, 'email': 'lokmane@test.fr', 'first_name': 'Lokmane', 'last_name': 'Test', 'avatar': 'https://api.testacademy.fr/img/faces/16-image.jpg'}, 'support': {'url': 'https://api.testacadem...</msg>
+<var>${reponseJson}</var>
+<arg>${reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.675531" elapsed="0.001142"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-13T00:14:58.677703" level="INFO">{'data': {'id': 16, 'email': 'lokmane@test.fr', 'first_name': 'Lokmane', 'last_name': 'Test', 'avatar': 'https://api.testacademy.fr/img/faces/16-image.jpg'}, 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${reponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.677141" elapsed="0.000665"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${reponseJson}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.678239" elapsed="0.000357"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${reponseJson}</arg>
+<arg>support</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.679033" elapsed="0.000305"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:58.680395" level="INFO">${data} = {'id': 16, 'email': 'lokmane@test.fr', 'first_name': 'Lokmane', 'last_name': 'Test', 'avatar': 'https://api.testacademy.fr/img/faces/16-image.jpg'}</msg>
+<var>${data}</var>
+<arg>${reponseJson}</arg>
+<arg>data</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.679994" elapsed="0.000460"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:14:58.681290" level="INFO">${id_recu} = 16</msg>
+<var>${id_recu}</var>
+<arg>${data}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.680950" elapsed="0.000394"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-06-13T00:14:58.682384" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${id_recu}</arg>
+<arg>${id}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.681774" elapsed="0.000735"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:57.035043" elapsed="1.647885"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:57.006408" elapsed="1.677613"/>
+</suite>
+<suite id="s1-s7" name="06 Requete GET Unknown TestAcademy" source="C:\projet-tests\tests_api\06_Requete_GET_Unknown_TestAcademy.robot">
+<test id="s1-s7-t1" name="Test Requete GET Unknown" line="11">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:58.690808" level="INFO">&amp;{Params} = { page=1 | per_page=6 }</msg>
+<var>&amp;{Params}</var>
+<arg>page=1</arg>
+<arg>per_page=6</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.690481" elapsed="0.000356"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:58.691452" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.691096" elapsed="0.000382"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-06-13T00:14:59.570826" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/unknown?page=1&amp;per_page=6 
+ path_url=/api/unknown?page=1&amp;per_page=6 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:14:59.571174" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/unknown?page=1&amp;per_page=6 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 12 Jun 2026 22:14:59 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': '2f5edd01-9620-4a43', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0ac362c8eea035c-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"page":1,"per_page":6,"total":6,"total_pages":1,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-06-13T00:14:59.571480" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/unknown</arg>
+<arg>params=${Params}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-06-13T00:14:58.692114" elapsed="0.879430"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:14:59.573891" level="INFO">${ReponseJson} = {'page': 1, 'per_page': 6, 'total': 6, 'total_pages': 1, 'data': [{'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}, {'id': 2, 'name': 'fuchsia rose', 'year':...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.572191" elapsed="0.001772"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-13T00:14:59.575246" level="INFO">{'page': 1, 'per_page': 6, 'total': 6, 'total_pages': 1, 'data': [{'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}, {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, {'id': 3, 'name': 'true red', 'year': 2002, 'color': '#BF1932', 'pantone_value': '19-1664'}, {'id': 4, 'name': 'aqua sky', 'year': 2003, 'color': '#7BC4C4', 'pantone_value': '14-4811'}, {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}, {'id': 6, 'name': 'blue turquoise', 'year': 2005, 'color': '#53B0AE', 'pantone_value': '15-5217'}], 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.574566" elapsed="0.000808"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.575944" elapsed="0.000533"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2026-06-13T00:14:59.617515" level="INFO">${ListeResources} = [{'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}, {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, {'id': 3,...</msg>
+<var>${ListeResources}</var>
+<arg>${ReponseJson}</arg>
+<arg>data[:]</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2026-06-13T00:14:59.576972" elapsed="0.040626"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2026-06-13T00:14:59.618778" level="INFO">${PremiereResource} = {'id': 1, 'name': 'cerulean', 'year': 2000, 'color': '#98B2D1', 'pantone_value': '15-4020'}</msg>
+<var>${PremiereResource}</var>
+<arg>${ListeResources}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.618254" elapsed="0.000586"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereResource}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.619304" elapsed="0.000327"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereResource}</arg>
+<arg>name</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.620478" elapsed="0.000368"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereResource}</arg>
+<arg>year</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.621350" elapsed="0.000361"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereResource}</arg>
+<arg>color</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.622180" elapsed="0.000629"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${PremiereResource}</arg>
+<arg>pantone_value</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.623571" elapsed="0.000394"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:58.689536" elapsed="0.934953"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:58.685269" elapsed="0.940939"/>
+</suite>
+<suite id="s1-s8" name="07 Requete GET Unknown ById TestAcademy" source="C:\projet-tests\tests_api\07_Requete_GET_Unknown_ById_TestAcademy.robot">
+<test id="s1-s8-t1" name="Test Requete GET Unknown By Id" line="12">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-13T00:14:59.636963" level="INFO">&amp;{headers} = { Authorization=Bearer Cle-API-ReqRes-test-academy }</msg>
+<var>&amp;{headers}</var>
+<arg>Authorization=Bearer ${API_KEY}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.635825" elapsed="0.001257"/>
+</kw>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2026-06-13T00:15:00.619454" level="INFO">GET Request : url=https://mock-api-h0g7.onrender.com/api/unknown/5 
+ path_url=/api/unknown/5 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer Cle-API-ReqRes-test-academy'} 
+ body=None 
+ </msg>
+<msg time="2026-06-13T00:15:00.619564" level="INFO">GET Response : url=https://mock-api-h0g7.onrender.com/api/unknown/5 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 12 Jun 2026 22:15:00 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'rndr-id': 'd099f7a2-7fd4-40e2', 'Server': 'cloudflare', 'vary': 'Accept-Encoding', 'x-render-origin-server': 'uvicorn', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0ac3632fd13f0bf-CDG', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={"data":{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},"support":{"url":"https://api.testacademy.fr/#support-heading","text":"To keep TestAcademy free, contributions towards server costs are appreciated!"}} 
+ </msg>
+<msg time="2026-06-13T00:15:00.619706" level="INFO">${Reponse} = &lt;Response [200]&gt;</msg>
+<var>${Reponse}</var>
+<arg>${Base_URL}api/unknown/${Id_Resource}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2026-06-13T00:14:59.637668" elapsed="0.982066"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-13T00:15:00.621585" level="INFO">${ReponseJson} = {'data': {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}, 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy fr...</msg>
+<var>${ReponseJson}</var>
+<arg>${Reponse.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-13T00:15:00.620428" elapsed="0.001188"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-13T00:15:00.622209" level="INFO">{'data': {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}, 'support': {'url': 'https://api.testacademy.fr/#support-heading', 'text': 'To keep TestAcademy free, contributions towards server costs are appreciated!'}}</msg>
+<arg>${ReponseJson}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-13T00:15:00.621924" elapsed="0.000332"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-06-13T00:15:00.622665" elapsed="0.000296"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:15:00.623578" level="INFO">${data} = {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}</msg>
+<var>${data}</var>
+<arg>${ReponseJson}</arg>
+<arg>data</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:15:00.623312" elapsed="0.000306"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<msg time="2026-06-13T00:15:00.624401" level="INFO">${id} = 5</msg>
+<var>${id}</var>
+<arg>${data}</arg>
+<arg>id</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="PASS" start="2026-06-13T00:15:00.624055" elapsed="0.000409"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-06-13T00:15:00.625167" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${id}</arg>
+<arg>${Id_Resource}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-06-13T00:15:00.624765" elapsed="0.000529"/>
+</kw>
+<status status="PASS" start="2026-06-13T00:14:59.634690" elapsed="0.991000"/>
+</test>
+<status status="PASS" start="2026-06-13T00:14:59.627570" elapsed="0.998846"/>
+</suite>
+<status status="PASS" start="2026-06-13T00:14:49.414805" elapsed="11.212318"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests Api" id="s1" pass="8" fail="0" skip="0">Tests Api</stat>
+<stat name="00 Requête GET HTML Google" id="s1-s1" pass="1" fail="0" skip="0">Tests Api.00 Requête GET HTML Google</stat>
+<stat name="01 Request GET TestAcademy" id="s1-s2" pass="1" fail="0" skip="0">Tests Api.01 Request GET TestAcademy</stat>
+<stat name="02 Requete POST TestAcademy" id="s1-s3" pass="1" fail="0" skip="0">Tests Api.02 Requete POST TestAcademy</stat>
+<stat name="03 Requete DELETE TestAcademy (3)" id="s1-s4" pass="1" fail="0" skip="0">Tests Api.03 Requete DELETE TestAcademy (3)</stat>
+<stat name="04 Requete PUT TestAcademy (1)" id="s1-s5" pass="1" fail="0" skip="0">Tests Api.04 Requete PUT TestAcademy (1)</stat>
+<stat name="05 Requete GET User ById TestAcademy" id="s1-s6" pass="1" fail="0" skip="0">Tests Api.05 Requete GET User ById TestAcademy</stat>
+<stat name="06 Requete GET Unknown TestAcademy" id="s1-s7" pass="1" fail="0" skip="0">Tests Api.06 Requete GET Unknown TestAcademy</stat>
+<stat name="07 Requete GET Unknown ById TestAcademy" id="s1-s8" pass="1" fail="0" skip="0">Tests Api.07 Requete GET Unknown ById TestAcademy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
