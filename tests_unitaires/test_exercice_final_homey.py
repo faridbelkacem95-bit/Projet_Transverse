@@ -19,7 +19,8 @@ class TestHomeyManager(unittest.TestCase):
         self.propriete1 = self.manager.ajouter_propriete(1, "Villa Azur", 150.0)
         self.propriete2 = self.manager.ajouter_propriete(2, "Chalet Montagne", 200.0)
         self.propriete3 = self.manager.ajouter_propriete(3, "Studio Paris", 80.0)
-        
+
+    
 
     # ---------------------------------------------------------------
     # 1. Tests pour ajouter_propriete()
